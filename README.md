@@ -11,7 +11,7 @@ Insert the missing parts in the **JOIN** clause to join the two tables **Enrolme
 SELECT *
 FROM Enrolments
 LEFT JOIN Students
-[insert clause here];
+ON Enrolments.StudentId = Students.StudentID;
 ```
 *(Add your query to the file exercise1.sql)*
 
@@ -20,7 +20,7 @@ Choose the correct **JOIN** clause to select all records from the two tables whe
 ```
 SELECT *
 FROM Enrolments
-[insert clause here]
+INNER JOIN Students
 ON Enrolments.StudentID=Students.StudentID;
 ```
 
@@ -33,7 +33,7 @@ Choose the correct **JOIN** clause to select all the records from the **Students
 ```
 SELECT *
 FROM Enrolments
-[insert clause here]
+RIGHT JOIN Students
 ON Enrolments.StudentID=Students.StudentID;
 ```
 
@@ -46,12 +46,12 @@ List the number of **Students** in each **Country**.
 *(Add your query to the file exercise4.sql)*
 
 List the number of **Students** in each **Country**, ordered by the **Country** with the most **Students** first.
-
-
+SELECT County, COUNT(*) FROM 
+... ORDER BY (colimn) {DESC}
 *(Add your query to the file exercise5.sql)*
 
 
 
 List the number of **Students** in each **Country**, ordered by the **Country** with the most **Students** first, where the number of students is greater than 10.
-
+... WHERE (coloumn) > 10 ORDER BY (colimn) {DESC}
 *(Add your query to the file exercise6.sql)*
