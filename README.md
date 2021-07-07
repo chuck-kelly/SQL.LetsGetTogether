@@ -41,7 +41,8 @@ ON Enrolments.StudentID=Students.StudentID;
 
 ## Grouping records by Column
 List the number of **Students** in each **Country**.
-
+SELECT COUNT(Country) FROM Studets
+GROUP BY Country
 
 *(Add your query to the file exercise4.sql)*
 
